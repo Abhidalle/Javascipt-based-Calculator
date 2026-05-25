@@ -43,11 +43,22 @@ button{
 
 }
 /* Add a hover effect to the buttons so that when we hover they turn into a lighter shade*/
-buttons:hover{
+button:hover{
     background-color: hsl(0,0%,40%);
 }
 button:active{
     background-color: hsl(0,0%,50%);
+}
+
+.operator-btn{
+    background-color: hsl(35, 100%, 55%);
+
+}
+.operator-btn:hover{
+    background-color: hsl(35, 100%, 65%);
+}
+.operator-btn:active{
+    background-color: hsl(35, 100%, 75%);
 }
 
 
