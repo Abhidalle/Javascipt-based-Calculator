@@ -1,3 +1,12 @@
+body{
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:hsl(0,0%,95%) ;
+}
+
 button{
     width: 100px;
     height: 50px;
@@ -13,4 +22,32 @@ button{
 #keys{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
 }
+
+#calculator{
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: hsl(0, 0%, 15%);
+   max-width:500px;
+   overflow:hidden;
+}
+#display{
+    width:100%;
+    padding:20px;
+    font-size: 5rem;
+    text-align: right;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color:white;
+
+}
+/* Add a hover effect to the buttons so that when we hover they turn into a lighter shade*/
+buttons:hover{
+    background-color: hsl(0,0%,40%);
+}
+button:active{
+    background-color: hsl(0,0%,50%);
+}
+
+
