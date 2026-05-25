@@ -6,16 +6,15 @@ body{
     height: 100vh;
     background-color:hsl(0,0%,95%) ;
 }
-
 button{
-    width: 100px;
-    height: 50px;
-    border-radius: 50px;
+    width: 65px;       
+    height: 65px;       
+    border-radius: 50%;
     border: none;
     background-color: hsl(0, 0%, 30%);
     color:white;
-    font-size: 3rem;
-    font-weight: bold;;
+    font-size: 1.8rem;   
+    font-weight: bold;
     cursor:pointer;
 }
 
@@ -29,19 +28,21 @@ button{
 #calculator{
    font-family: Arial, Helvetica, sans-serif;
    background-color: hsl(0, 0%, 15%);
-   max-width:500px;
+   width: 340px;        
+   border-radius: 20px; 
    overflow:hidden;
 }
 #display{
     width:100%;
     padding:20px;
-    font-size: 5rem;
+    font-size: 2.5rem;  
     text-align: right;
     border: none;
     background-color: hsl(0, 0%, 20%);
     color:white;
-
+    box-sizing: border-box; 
 }
+
 /* Add a hover effect to the buttons so that when we hover they turn into a lighter shade*/
 button:hover{
     background-color: hsl(0,0%,40%);
