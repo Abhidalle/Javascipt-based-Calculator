@@ -5,7 +5,19 @@
     <title>Harry Potter Themed Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body> 
+<body>
+    <button id="lumos-btn" onclick="toggleLumos()">🪄 Lumos</button>
+    
+    <div id="gatekeeper">
+        <h1>Identify Yourself for using the MAGICAL Calculator</h1>
+        <div class="house-buttons">
+            <button onclick="checkBlood('pure')">Pureblood</button>
+            <button onclick="checkBlood('half')">Half-blood</button>
+            <button onclick="checkBlood('muggle')">Muggle</button>
+        </div>
+        <p id="sorting-message"></p>
+    </div>
+
     <div id="calculator">
         <input id="display" readonly>
         <div id="keys">
@@ -27,7 +39,6 @@
            <button onclick="calculate()" class="operator-btn">=</button>
            <button onclick="clearDisplay()" class="operator-btn">C</button>
         </div> 
-
     </div>
 <script src="script.js"></script>
 </body>

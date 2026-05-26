@@ -8,3 +8,6 @@ It was a refreshment on the javascript i knew and then adding more functions to 
 After this initial basic model now i want to make it look even better with the harry potter themed User interface.
 
 It was hard to make it harry potter themed and i had to look up the actaul css property that would change that things multiple times.
+
+
+

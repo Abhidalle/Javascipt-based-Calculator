@@ -44,3 +44,38 @@ document.addEventListener("keydown", function(event){
 
 //Now after this is done we should be able to use our own keyboard to type the numbers in the screen as well
 
+
+
+
+
+
+//Finally the adding the js for the muggle/pure
+function checkBlood(status) {
+    const gatekeeper = document.getElementById("gatekeeper");
+    const message = document.getElementById("sorting-message");
+
+    if (status === 'muggle') {
+       
+        message.innerText = "Nice try, Dursley. Magic is not for you.";
+    } else {
+        
+        gatekeeper.style.display = "none"; 
+    }
+}
+
+
+//finishing with the  lumos and nox js needed for turing it dark vs light 
+function toggleLumos() {
+   
+    document.body.classList.toggle("lumos-mode");
+    
+    const btn = document.getElementById("lumos-btn");
+    
+
+
+    if (document.body.classList.contains("lumos-mode")) {
+        btn.innerText = "🪄 Nox"; 
+    } else {
+        btn.innerText = "🪄 Lumos";
+    }
+}
