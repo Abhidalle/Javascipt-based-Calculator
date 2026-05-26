@@ -1,36 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
+
 body{
     margin: 0;
     display:flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color:hsl(0,0%,95%) ;
+/*Now i have made it from a white scren to a darked more moddy theme like he harry potter series*/
+    background-color: #0d0d12;
+    background-image: radial-gradient(circle at center, #1a1a2e 0%, #000000 100%);
 }
 button{
     width: 65px;       
     height: 65px;       
     border-radius: 50%;
-    border: none;
-    background-color: hsl(0, 0%, 30%);
-    color:white;
-    font-size: 1.8rem;   
+    border: 2px solid #3d3535;
+    background-color: #2b2525;
+    color:#d3a625;
+    font-size: 1.6rem;   
     font-weight: bold;
+    font-family: 'Cinzel', serif;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
     cursor:pointer;
+
+    /*Adding these box shadow and the gold color liek from the griffindor would make it aesthetically better*/
 }
 
 #keys{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 12px;
     padding: 25px;
 }
 
 #calculator{
-   font-family: Arial, Helvetica, sans-serif;
-   background-color: hsl(0, 0%, 15%);
+   font-family: 'Cinzel', sans-serif;
+   background-color: #1e1a1b;
    width: 340px;        
    border-radius: 20px; 
    overflow:hidden;
+/*Now to add this magical gold glowing shadow around the cals itself*/ 
+    box-shadow: 0 0 20px rgba(211,166,37,0.3) insert 0 0 10px #000;
+    border: 2px solid #8a6d3b;
 }
 #display{
     width:100%;
@@ -38,28 +51,40 @@ button{
     font-size: 2.5rem;  
     text-align: right;
     border: none;
-    background-color: hsl(0, 0%, 20%);
-    color:white;
-    box-sizing: border-box; 
+    background-color: #f4e8d1;
+    color: #311516;
+    box-sizing: border-box;
+    border-bottom: 3px solid #8a6d3b;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    box-shadow: insert 0 0 15px rgba(0,0,0,0.2);
+
+
 }
 
 /* Add a hover effect to the buttons so that when we hover they turn into a lighter shade*/
 button:hover{
-    background-color: hsl(0,0%,40%);
+    background-color: #3d3535;
+    box-shadow: 0 0 10px rgba(211, 166, 37, 0.4); 
+    transform: scale(1.05);
 }
 button:active{
-    background-color: hsl(0,0%,50%);
+    background-color: #1a1717;
+    transform:scale(0.95);
 }
 
 .operator-btn{
-    background-color: hsl(35, 100%, 55%);
+    background-color: #740001;
+    color: #d3a625;
+    border-color: #9c0c0e;
 
 }
 .operator-btn:hover{
     background-color: hsl(35, 100%, 65%);
+    box-shadow: 0 0 15px rgba(211, 166, 37, 0.6);
 }
 .operator-btn:active{
-    background-color: hsl(35, 100%, 75%);
+    background-color: #4a0000;
 }
 
 
