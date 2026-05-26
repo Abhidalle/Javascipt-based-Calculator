@@ -5,8 +5,10 @@ body{
     margin: 0;
     display:flex;
     justify-content: center;
+    flex-direction:column;
     align-items: center;
     height: 100vh;
+    font-family: 'Cinzel',serif;
 /*Now i have made it from a white scren to a darked more moddy theme like he harry potter series*/
     background-color: #0d0d12;
     background-image: radial-gradient(circle at center, #1a1a2e 0%, #000000 100%);
@@ -131,6 +133,8 @@ button:active{
 
 /*Lets add the final css we need for these lumos and nox one(light and dark mode for those who dont know)*/
 
+
+
 #lumos-btn{
     position:absolute;
     top:20px;
@@ -139,20 +143,51 @@ button:active{
     height:auto;
     padding: 10px 20px;
     font-size:1.2rem;
+    border-radius: 10px;
+    z-index: 500;
 }
 
 body.lumos-mode{
-    background-color:#f4e8d1;
+    background-color:#e5d9c2;
     background-image:none;
 }
 
+body.lumos-mode #welcome-message {
+    color: #311516;
+}
+
+body.lumos-mode #welcome-message p {
+    color: #5c2c2d;
+}
+
 body.lumos-mode #calculator {
-    background-color: #ffffff;
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8), inset 0 0 10px #ccc;
-    border: 2px solid #ccc;
+    background-color: #d3c4a9;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.4), inset 0 0 10px #a3957a;
+    border: 2px solid #8a7a5c;
 }
 
 body.lumos-mode #lumos-btn {
-    background-color: #f4e8d1;
-    color: #000;
+    background-color: #d3c4a9;
+    color: #311516;
+    border: 2px solid #8a7a5c;
+}
+
+
+
+/*The welcome message*/
+#welcome-message{
+    text-align: center;
+    color: #d3a625;
+    max-width: 340px;
+    margin-bottom: 20px;
+}
+#welcome-message h2{
+    margin: 0 0 5px 0;
+    font-size: 1.8rem
+}
+
+#welcome-message p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #a88a32;
 }
